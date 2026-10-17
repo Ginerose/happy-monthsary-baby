@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Happy Monthsary, Baby! 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true">
+    <span>♡</span><span>✦</span><span>♥</span><span>✧</span><span>♡</span><span>✦</span><span>♥</span>
+  </div>
+
+  <main class="page">
+    <header class="topline"><span>MADE WITH LOVE</span><span>♡ JUST FOR YOU ♡</span></header>
+
+    <section class="hero panel">
+      <div class="sticker">💌</div>
+      <p class="eyebrow">to my favorite person in the whole world</p>
+      <h1>Happy Monthsary,<br><em>Baby!</em></h1>
+      <p class="hero-copy">A tiny website filled with a very big love for you.</p>
+      <div class="heart-divider">♡ ── ♥ ── ♡</div>
+      <p class="tap-hint">I made a few little surprises for you...</p>
+      <button class="primary-btn" id="startBtn">Open your surprise ✨</button>
+    </section>
+
+    <section class="grid">
+      <article class="panel feature-card">
+        <div class="icon">💌</div>
+        <p class="card-kicker">A NOTE FROM MY HEART</p>
+        <h2>Your Love Letter</h2>
+        <p>A few words I want you to keep close.</p>
+        <button class="soft-btn" data-open="letter">Read my letter</button>
+      </article>
+      <article class="panel feature-card">
+        <div class="icon">🌷</div>
+        <p class="card-kicker">LITTLE THINGS, BIG LOVE</p>
+        <h2>Why I Love You</h2>
+        <p>Tap to discover some of my favorite things about you.</p>
+        <button class="soft-btn" data-open="reasons">Show me why</button>
+      </article>
+      <article class="panel feature-card surprise-card">
+        <div class="icon">🎁</div>
+        <p class="card-kicker">ONE LAST THING...</p>
+        <h2>A Little Surprise</h2>
+        <p>There's something sweet waiting just for you.</p>
+        <button class="soft-btn" data-open="surprise">Open the gift</button>
+      </article>
+    </section>
+
+    <section class="panel content-panel" id="contentPanel" hidden aria-live="polite">
+      <button class="close-btn" id="closePanel" aria-label="Close">×</button>
+      <div id="content"></div>
+    </section>
+
+    <footer>YOU ARE MY FAVORITE PERSON <span>♥</span> HAPPY MONTHSARY, BABY!</footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
